@@ -27,8 +27,5 @@ class TenantUser(TenantModel, AbstractBaseUser):
 
     USERNAME_FIELD = 'email'
 
-    class Meta:
-        app_label = 'tenancy'
-
     class TenantMeta:
         related_name = 'users'
